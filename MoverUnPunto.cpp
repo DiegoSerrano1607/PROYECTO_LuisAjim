@@ -1,6 +1,6 @@
 #include <iostream>
 #include <windows.h>
-//opcion14
+
 using namespace std;
 
 void gotoxy(int x, int y) {
@@ -18,14 +18,10 @@ void opcion14() {
     int y = screenHeight / 2;
 
     while (true) {
-        // Borrar la pantalla
         system("cls");
-
-        // Dibujar el punto en la posición actual
         gotoxy(x, y);
         cout << "*";
 
-        // Leer la entrada del teclado para mover el punto
         if (GetAsyncKeyState(VK_UP) & 0x8000 && y > 0) {
             y--;
         }
@@ -39,7 +35,6 @@ void opcion14() {
             x++;
         }
 
-        // Esperar un breve período de tiempo para controlar la velocidad del movimiento
         Sleep(50);
     }
 }
@@ -48,6 +43,6 @@ void iniciarPrograma() {
     opcion14();
 }
 
-void iniciar() {
+void Iniciarprogrma() {
     iniciarPrograma();
 }

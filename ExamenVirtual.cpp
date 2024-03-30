@@ -53,6 +53,6 @@ void opcion18() {
     cout << "\nGracias por participar :)"<< endl;
 }
 
-int main() {
+void Iniciar3() {
     opcion18();
 }

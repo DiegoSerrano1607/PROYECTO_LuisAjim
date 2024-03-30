@@ -10,13 +10,15 @@ string decimalToHexadecimal(int decimal) {
     return ss.str(); // Retorna el valor hexadecimal como una cadena
 }
 
-int main() {
+void opcion12() {
     int decimal;
     cout << "Ingrese un numero decimal: ";
     cin >> decimal;
 
     string hexadecimal = decimalToHexadecimal(decimal);
     cout << "El numero hexadecimal equivalente es: " << hexadecimal <<endl;
+}
 
-    return 0;
+void start() {
+    opcion12();
 }

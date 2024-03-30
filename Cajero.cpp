@@ -17,9 +17,9 @@ void opcion15() {
         cout << "Opción: ";
         cin >> opcion;
 
+        int cantidad;
         switch (opcion) {
-            case 1: {
-                int cantidad;
+            case 1:
                 cout << "Ingrese la cantidad a retirar: ";
                 cin >> cantidad;
                 if (cantidad > saldo) {
@@ -27,19 +27,14 @@ void opcion15() {
                 } else {
                     saldo -= cantidad;
                     cout << "Retiro exitoso" << endl;
-                    cout << "Saldo restante: Q" << saldo << endl;
                 }
                 break;
-            }
-            case 2: {
-                int cantidad;
+            case 2:
                 cout << "Ingrese la cantidad a depositar: ";
                 cin >> cantidad;
                 saldo += cantidad;
                 cout << "Depósito exitoso" << endl;
-                cout << "Saldo actual: Q" << saldo << endl;
                 break;
-            }
             case 3:
                 cout << "Gracias por utilizar nuestro servicio. ¡Hasta luego!" << endl;
                 break;
@@ -47,13 +42,11 @@ void opcion15() {
                 cout << "Opción inválida. Por favor, seleccione una opción válida." << endl;
                 break;
         }
+        if (opcion != 3)
+            cout << "Saldo actual: Q" << saldo << endl;
     } while (opcion != 3);
 }
 
-void iniciarPrograma() {
+void Iniciar() {
     opcion15();
-}
-
-void iniciar() {
-    iniciarPrograma();
 }

@@ -41,9 +41,9 @@ void opcion17() {
     }
 
     cout << "Resultado: " << resultado << endl;
-    cout<< "\n Gracias por utilizar la calculadora :)"<<endl;
+    cout << "\n Gracias por utilizar la calculadora :)" << endl;
 }
 
-int main() {
+void Iniciar4() {
     opcion17();
 }
